@@ -90,5 +90,4 @@ python pdf_learning.py
 
 ## Author
 Saloni Singh  
-University Assignment – Probability & Machine Learning
 
