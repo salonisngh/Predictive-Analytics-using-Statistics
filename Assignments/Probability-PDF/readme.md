@@ -55,21 +55,15 @@ The parameters are learned using **Maximum Likelihood Estimation (MLE)**:
 
 ---
 
-## Step 3: Visualization
-A histogram of the transformed data is plotted along with the learned PDF curve
-to visually validate the model fit.
-
----
-
 ## How to Run
 1. Install required libraries:
 ```
-pip install numpy pandas matplotlib
+pip install numpy pandas 
 ```
 
 2. Run the Python script:
 ```
-python pdf_learning.py
+python UCS654_Assignment01.ipynb
 ```
 
 ---
