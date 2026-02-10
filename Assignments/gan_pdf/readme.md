@@ -1,13 +1,13 @@
 # Learning Probability Density Functions using GAN (NO₂ Air Quality Data)
 
-## 📌 Project Overview
+## Project Overview
 This project aims to learn an unknown probability density function (PDF) of a transformed random variable using a Generative Adversarial Network (GAN).
 
 The NO₂ concentration values from India's Air Quality dataset are transformed using a nonlinear function and a GAN is trained to learn the underlying data distribution directly from samples.
 
 ---
 
-## 🎯 Objective
+##  Objective
 - Transform NO₂ feature into a new variable z
 - Learn unknown distribution of z using GAN
 - Generate synthetic samples
@@ -15,7 +15,7 @@ The NO₂ concentration values from India's Air Quality dataset are transformed 
 
 ---
 
-## 📂 Dataset
+##  Dataset
 India Air Quality Dataset (Kaggle):
 https://www.kaggle.com/datasets/shrutibhargava94/india-air-quality-data
 
@@ -24,7 +24,7 @@ Feature Used:
 
 ---
 
-## 🔢 Transformation Function
+## Transformation Function
 
 z = x + a_r * sin(b_r * x)
 
@@ -34,7 +34,7 @@ a_r = 0.5 * (r mod 7)
 b_r = 0.3 * ((r mod 5) + 1)
 
 
-r = University Roll Number
+r = My University Roll Number
 
 ---
 
@@ -64,14 +64,14 @@ r = University Roll Number
 
 ---
 
-## 📊 Output
+##  Output
 - Generated synthetic samples
 - GAN learned probability density
 - Histogram vs KDE plot
 
 ---
 
-## 📈 Observations
+##  Observations
 
 ### Mode Coverage
 GAN captures major distribution modes but minor modes may be smoothed.
@@ -84,7 +84,7 @@ Generated samples closely match the real transformed data distribution.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - Python
 - PyTorch
 - NumPy
@@ -94,11 +94,18 @@ Generated samples closely match the real transformed data distribution.
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### Install Dependencies
 pip install pandas numpy matplotlib torch scikit-learn
 
-
 ### Run Script
+python gan_pdf_learning.py
+
+---
+
+###Author
+Saloni
+### Run Script
+
 python gan_pdf_learning.py
