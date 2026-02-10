@@ -130,10 +130,9 @@ python gan_pdf_learning.py
 
 ---
 
-###Author
+### Author
 Saloni
-### Run Script
 
-python gan_pdf_learning.py
+
 
 
