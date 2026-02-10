@@ -16,11 +16,14 @@ The NO₂ concentration values from India's Air Quality dataset are transformed 
 ---
 
 ##  Dataset
-India Air Quality Dataset (Kaggle):
+## Dataset
+- **Name:** India Air Quality Dataset
+- **Source:** Kaggle
+- **Feature Used:** NO₂ concentration
+
+Dataset Link:  
 https://www.kaggle.com/datasets/shrutibhargava94/india-air-quality-data
 
-Feature Used:
-- NO₂ concentration
 
 ---
 
@@ -38,7 +41,16 @@ r = My University Roll Number
 
 ---
 
-## 🧠 GAN Architecture
+##  GAN Architecture
+
+### Learning Objective
+- The transformed variable z is assumed to come from an unknown distribution.
+- The GAN learns the probability distribution directly from z samples.
+- No parametric distribution assumptions are made.
+
+### Generator Input
+Noise vector sampled from:
+N(0,1)
 
 ### Generator
 - Input: Noise vector ~ N(0,1)
@@ -51,9 +63,24 @@ r = My University Roll Number
 - Dense(32 → 16) + ReLU
 - Dense(16 → 1) + Sigmoid
 
----
+Function:
+- Distinguish between real z samples and generated samples.
 
-## ⚙️ Methodology
+##  PDF Approximation
+
+After training:
+
+1. Generate a large number of samples from the generator.
+2. Estimate probability density using Kernel Density Estimation (KDE).
+3. Compare real and generated distributions.
+---
+## Learned Probability Density Function
+
+<img width="699" height="451" alt="plot" src="https://github.com/user-attachments/assets/ff061755-b238-44c3-b7d2-e66c1398e58b" />
+
+
+---
+##  Methodology
 
 1. Load NO₂ data
 2. Apply nonlinear transformation
@@ -109,3 +136,4 @@ Saloni
 ### Run Script
 
 python gan_pdf_learning.py
+
