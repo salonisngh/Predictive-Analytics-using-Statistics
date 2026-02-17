@@ -20,8 +20,10 @@ Use pip to install the package:
 
 ```bash
 pip install Topsis-Saloni-102317246
+```
 
-Usage
+---
+## Usage
 
 Enter:
 
@@ -30,26 +32,29 @@ CSV filename (with .csv extension)
 Weights vector (comma-separated values)
 
 Impacts vector (comma-separated signs + or -)
+---
 
-Format:
+## Format:
+```bash
 topsis <inputfile.csv> <weights> <impacts>
-
+```
 Example:
+```bash
 topsis sample.csv "1,1,1,1" "+,-,+,+"
-
+```
 
 OR
-
+```bash
 topsis sample.csv 1,1,1,1 +,-,+,+
-
+```
 
 ⚠️ If vectors contain spaces, enclose them in double quotes (" ").
 
 To view usage help:
 
 topsis /h
-
-Example
+---
+## Example
 
 sample.csv
 
@@ -71,7 +76,8 @@ Input
 topsis sample.csv "0.25,0.25,0.25,0.25" "+,+,-,+"
 
 Output
-TOPSIS RESULTS
+
+## TOPSIS RESULTS
 -----------------------------
 
     P-Score  Rank
@@ -88,6 +94,8 @@ The first column and first row are removed automatically to handle indices and h
 The CSV must contain only numeric values (except the first column).
 
 The number of weights and impacts must match the number of criteria columns
+---
 
-LICENESE 
+## LICENESE 
 MIT
+
