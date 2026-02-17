@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: Topsis-Saloni-102317246
+Version: 0.3
+Summary: A command-line Python package to implement the TOPSIS method.
+Author: Saloni Singh
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
