@@ -85,12 +85,17 @@ Output:
 ## TOPSIS RESULTS
 -----------------------------
 
-    P-Score  Rank
-1  0.534277     3
-2  0.308368     5
-3  0.691632     1
-4  0.534737     2
-5  0.401046     4
+    P-Score   | Rank
+-----------------------------
+1 | 0.534277  |  3
+
+2 | 0.308368  |  5
+
+3 | 0.691632  |  1
+
+4 | 0.534737  |  2
+
+5 | 0.401046  |  4
 
 
 
@@ -105,5 +110,6 @@ The number of weights and impacts must match the number of criteria columns
 
 ## LICENESE 
 MIT
+
 
 
