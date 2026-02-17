@@ -27,11 +27,12 @@ pip install Topsis-Saloni-102317246
 
 Enter:
 
-CSV filename (with .csv extension)
+1.CSV filename (with .csv extension)
 
-Weights vector (comma-separated values)
+2.Weights vector (comma-separated values)
 
-Impacts vector (comma-separated signs + or -)
+3.Impacts vector (comma-separated signs + or -)
+
 ---
 
 ## Format:
@@ -51,8 +52,10 @@ topsis sample.csv 1,1,1,1 +,-,+,+
 ⚠️ If vectors contain spaces, enclose them in double quotes (" ").
 
 To view usage help:
-
+```bash
 topsis /h
+```
+
 ---
 ## Example
 
@@ -60,22 +63,24 @@ sample.csv
 
 A CSV file containing data for different mobile handsets with various features:
 
-Model	Storage (GB)	Camera (MP)	Price ($)	Looks (out of 5)
-M1	16	12	250	5
-M2	16	8	200	3
-M3	32	16	300	4
-M4	32	8	275	4
-M5	16	16	225	2
-Weights Vector
+| Model | Storage (GB) | Camera (MP) | Price ($) | Looks (out of 5) |
+| ----- | ------------ | ----------- | --------- | ---------------- |
+| M1    | 16           | 12          | 250       | 5                |
+| M2    | 16           | 8           | 200       | 3                |
+| M3    | 32           | 16          | 300       | 4                |
+| M4    | 32           | 8           | 275       | 4                |
+| M5    | 16           | 16          | 225       | 2                |
+
+Weights Vector: 
 0.25,0.25,0.25,0.25
 
-Impacts Vector
+Impacts Vector: 
 +,+,-,+
 
-Input
+Input:
 topsis sample.csv "0.25,0.25,0.25,0.25" "+,+,-,+"
 
-Output
+Output:
 
 ## TOPSIS RESULTS
 -----------------------------
@@ -87,6 +92,8 @@ Output
 4  0.534737     2
 5  0.401046     4
 
+
+
 ⚠️ Notes
 
 The first column and first row are removed automatically to handle indices and headers.
@@ -94,8 +101,9 @@ The first column and first row are removed automatically to handle indices and h
 The CSV must contain only numeric values (except the first column).
 
 The number of weights and impacts must match the number of criteria columns
----
+
 
 ## LICENESE 
 MIT
+
 
