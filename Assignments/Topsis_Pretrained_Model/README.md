@@ -1,12 +1,12 @@
 # TOPSIS-Based Selection of Best Pre-Trained Text Generation Model
 
-## 📌 Objective
+##   Objective
 
 The objective of this project is to apply the **TOPSIS (Technique for Order Preference by Similarity to Ideal Solution)** multi-criteria decision-making method to identify the best pre-trained model for **Text Generation**.
 
 ---
 
-## 🤖 Models Compared
+##   Models Compared
 
 The following popular pre-trained text generation models were evaluated:
 
@@ -18,7 +18,7 @@ The following popular pre-trained text generation models were evaluated:
 
 ---
 
-## 📊 Evaluation Criteria
+##   Evaluation Criteria
 
 The models were compared using the following criteria:
 
@@ -32,7 +32,7 @@ The models were compared using the following criteria:
 
 ---
 
-## ⚖️ Weights Assigned
+##   Weights Assigned
 
 The following weights were assigned based on importance:
 
@@ -46,7 +46,7 @@ The following weights were assigned based on importance:
 
 ---
 
-## 🧮 Methodology (TOPSIS Steps)
+##   Methodology (TOPSIS Steps)
 
 1. Construct Decision Matrix  
 2. Normalize the Matrix  
@@ -58,7 +58,7 @@ The following weights were assigned based on importance:
 
 ---
 
-## 📈 Results
+##  Results
 
 After applying TOPSIS, the models were ranked based on their Closeness Coefficient.
 
@@ -72,26 +72,16 @@ After applying TOPSIS, the models were ranked based on their Closeness Coefficie
 
 ---
 
-## 🏆 Conclusion
+## Conclusion
 
 Based on the TOPSIS analysis, **LLaMA 2** achieved the highest closeness coefficient, indicating the best balance between performance quality and computational efficiency.  
 
 Therefore, LLaMA 2 is selected as the optimal pre-trained model for text generation among the evaluated alternatives.
 
----
-
-## 📂 Project Structure
-Text-Generation-TOPSIS/
-│
-├── topsis.py
-├── results.png
-├── README.md
-└── Report.pdf
-
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - Python  
 - NumPy  
@@ -100,7 +90,8 @@ Text-Generation-TOPSIS/
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 Saloni Singh  
 B.Tech Student  
+
